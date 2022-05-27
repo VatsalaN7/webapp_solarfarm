@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Display Biodiversity Data</title>
+    <div><h1 style="color:blue;"><center>Exploring the biodiversity data related to Solar Farms</center></h1></div>
+   <!--<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" /> -->
+</head>
+<body>
+     <table border=1 style="border-spacing:50px; width:100%">
+     <tr><td colspan="2"><a href="{{url_for('homepage')}}">Home Page</td></tr>
+      <tr>
+        <td width="50%">
+            <div class="centered">
+            <table border=1 style="border-spacing:25px;">
+            	<tr>
+            		<th>Solar Park Study Data</th>
+                <td width="50%">
+            
+                 <table>
+                  <tr><td>
+                          <h3 style="background-color:#C9CDEC;color:#5844BC; font-size=15px;"><a href="{{url_for('displaySolarParkStudy')}}">Viewing Solar Park Study data</a></h3>
+                  </td></tr>
+
+                 <tr><td valign="top">
+                     <h1>
+                 {% if spreadsheet %}
+                  {% for sheet in spreadsheet.sheetnames %}
+                       {% if colorcode == '#EDFAF3' %}
+                       {% set colorcode = '#DDE5F6' %} 
+                       {% elif colorcode == '#DDE5F6' %}
+                       {% set colorcode = '#EDFAF3 ' %}
+                       {% endif %}    
+                     <table id="demo">
+                      <tr><td style="height="3">&nbsp;</td></tr>
+                      <tr><td style="background-color: #DAECBD; font-size: 16px;font-weight:bold;">Sheet Name={{sheet}}</td></tr>
+                      {% for row in range(1, 10) %}
+                       {% if colorcode == '#EDFAF3' %}
+                       {% set colorcode = '#DDE5F6' %} 
+                       {% elif colorcode == '#DDE5F6' %}
+                       {% set colorcode = '#EDFAF3' %}
+                       {% endif %}    
+                        <tr style="background-color: {{colorcode}};">
+                          {% for col in range(1, spreadsheet[sheet].max_column + 1) %}
+                          {% if row == 1 %}
+                            <th style="font-size: 14px; background-color: #A3ECFB;">{{ spreadsheet[sheet].cell(row, col).value }}</th>
+                          {% else %}
+                            <td style="font-size: 12px;">{{ spreadsheet[sheet].cell(row, col).value }}</td>
+                          {% endif %}
+                          {% endfor %}
+
+                        </tr>
+                      {% endfor %}
+                    </table>
+                  {% endfor %}
+              {% endif %}
+               </h1>
+           </td></tr>
+           <tr rowspan="2"><td><a href="{{url_for('static', filename='SolarParkStudyData/Solar_Park_Study_Raw_Data_20200511a_Anonym.xlsx')}}">Download the {{message}} file</a></td></tr>
+           </table>
+          
+        </td>
+      </tr>
+      <tr><td colspan="2"><a href="{{url_for('homepage')}}">Home Page</td></tr>
+    </table>
+
+    	
+</body>
+</html>
+

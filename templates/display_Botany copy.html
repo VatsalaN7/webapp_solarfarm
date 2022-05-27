@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Display Biodiversity Data</title>
+    <div><h1 style="color:blue;"><center>Exploring the biodiversity data related to Solar Farms</center></h1></div>
+   <!--<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" /> -->
+</head>
+<body>
+     <table border=1 style="border-spacing:50px; width:100%">
+      <tr><td colspan="2"><a href="{{url_for('homepage')}}">Home Page</td></tr>
+      <tr>
+        <td width="50%">
+            <div class="centered">
+            <table style="border-spacing:25px;">
+            	<tr>
+            		<th>Botany Data</th>
+            		<th><table>
+        	    			<tr><td><a href="{{url_for('displayBotany', data='botany_data')}}">Botany Data</a></td></tr>
+                    <tr><td><hr/></td></tr>
+                    <tr><td><a href="{{url_for('displayBotany', data='botany_monitoringsurvey')}}">Monitoring Survey</a></td></tr>
+            		    </table>
+            		</th>
+            	</tr>
+            </table>
+            </div>
+        </td>
+        <td width="50%">
+            
+           <table>
+            <tr><td>
+                   {% if message %}
+                    <h3 style="background-color:#C9CDEC;color:#5844BC; font-size=15px;">Viewing {{message}}</h3>
+                  {% endif %}
+            </td></tr>
+
+            <tr><td valign="top">
+                <h1>
+                {% if spreadsheet %}
+                  {% for sheet in spreadsheet.sheetnames %}
+                       {% if colorcode == '#96A1F8' %}
+                       {% set colorcode = '#BDECD4' %} 
+                       {% elif colorcode == '#BDECD4' %}
+                       {% set colorcode = '#96A1F8 ' %}
+                       {% endif %}    
+                     <table id="demo">
+                      <tr><td style="height="3">&nbsp;</td></tr>
+                      <tr><td style="background-color: #DAECBD; font-size: 16px;font-weight:bold;">Sheet Name={{sheet}}</td></tr>
+                      {% for row in range(1, 10) %}
+                       {% if colorcode == '#96A1F8' %}
+                       {% set colorcode = '#BDECD4' %} 
+                       {% elif colorcode == '#BDECD4' %}
+                       {% set colorcode = '#96A1F8' %}
+                       {% endif %}  
+                        <tr style="background-color: {{colorcode}};">
+                          {% for col in range(1, spreadsheet[sheet].max_column + 1) %}
+                          <td style="font-size: 12px;">{{ spreadsheet[sheet].cell(row, col).value }}</td>
+                          {% endfor %}
+
+                        </tr>
+                      {% endfor %}
+                    </table>
+
+                  {% endfor %}
+              {% endif %}
+               </h1>
+           </td></tr>
+            {% if message == "botany_data" %}
+                <tr rowspan="2"><td><a href="{{url_for('static', filename='BotanyData/SiteX_botany_1.0_Anonym.xlsx')}}">Download the {{message}} file</a></td></tr>
+            {% elif message == "botany_monitoringsurvey" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='BotanyData/SiteXMonitoringSurvey_Anonym.xlsx')}}">Download the {{message}} file</a></td></tr>
+            {% endif %}
+           </table>
+          
+        </td>
+      </tr>
+  
+    </table>
+
+    	
+</body>
+</html>
+

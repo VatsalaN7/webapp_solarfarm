@@ -1,0 +1,3 @@
+Index,AnonymSite,AnonymCompany,AnonymLocation,AnonymCounty,AnonymPostCode
+0,SiteA,['CompanyA'],['LocationA'],['CountyA'],['PostcodeA']
+1,SiteC,['CompanyB'],['LocationB'],['CountyB'],['PostcodeB']

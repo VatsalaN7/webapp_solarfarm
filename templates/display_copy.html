@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Display Biodiversity Data</title>
+    <div><h1 style="color:blue;"><center>Exploring the biodiversity data related to Solar Farms</center></h1></div>
+   <!--<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" /> -->
+</head>
+<body>
+     <table border=1 style="border-spacing:50px; width:80%"><tr>
+        <td width="40%">
+            <div class="centered">
+            <table>
+            	<tr>
+            		<th>Pollinator Data</th>
+            		<th><table>
+        	    			<tr><td><a href="{{url_for('static', filename='PollinatorData/Field_data_2021_Quadrats_Anonym.csv')}}">Quadrats</a></td></tr>
+        	    			<tr><td>Transects</td></tr>
+        	    			<tr><td>Site Info</td></tr>
+        	    			<tr><td>Group Species</td></tr>
+            		    </table>
+            		</th>
+            	</tr>
+            	<tr><th colspan="2" style="background-color: grey"></th></tr>
+            	<tr>
+            		<th>Pollinator Data Visuals</th>
+            		<th><table>
+        	    			<tr><td>
+                                <!--<a href="{{url_for('static', filename='Visuals/Quadrat/Pollinator_Quadrat_Species_ForAllSites_ExploringOneSite.pdf')}}" download>Quadrats</a>-->
+                                 <!-- Direct to a view function -->
+                                 <!--<a href="{{url_for('testing', test='Quadrats')}}">Quadrats</a>-->
+                                 <a href="{{url_for('displaySubset', test='Quadrats')}}">Quadrats</a>
+                            </td></tr>
+        	    			<tr><td><a href="{{url_for('test', type1='Transects')}}">Transects</a></td></tr>
+        	    			<tr><td>Site Info</td></tr>
+        	    			<tr><td>Group Species</td></tr>
+            		    </table>
+            		</th>
+            	</tr>
+            </table>
+            </div>
+        </td>
+        <td width="60%">
+              fjdf
+              {% if message =="Quadrats" %}
+                   {{message}}
+              {% endif %}
+        </td></tr>
+    </table>
+
+    	
+</body>
+</html>
+

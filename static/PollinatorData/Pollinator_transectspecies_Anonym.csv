@@ -1,0 +1,84 @@
+Index,Date,Number_Sites,Species,Number_Species,AnonymSite
+0,14/07/2021,1,"['Marbled_white' 'Meadow_brown' 'Cannot_ID_hoverfly'
+ 'No_pollinators_recorded' 'Cannot_ID_moth' 'Large_white']",6,SiteA
+1,15/07/2021,1,"['Cannot_ID_hoverfly' 'Meadow_brown' 'Buff_tailed_bumblebee' 'Gatekeeper'
+ 'Cannot_ID_moth' 'Ringlet' 'Large_skipper' 'Honeybee' 'Marbled_white']",9,SiteC
+2,15/07/2021,1,"['Meadow_brown' 'Gatekeeper' 'Garden_bumblebee' 'Marbled_white'
+ 'Large_skipper' 'Cannot_ID_hoverfly' 'Common_carder_bee' 'Cannot_ID_moth'
+ 'Red_tailed_bumblebee' 'Buff_tailed_bumblebee' 'Ringlet' 'Peacock']",12,SiteB
+3,16/07/2021,1,"['Marbled_white' 'Meadow_brown' 'Buff_or_white_tailed_bumblebee'
+ 'Gatekeeper' 'Cannot_ID_hoverfly' 'Cannot_ID_moth' 'Red_tailed_bumblebee'
+ 'Honeybee' 'Buff_tailed_bumblebee' 'Large_skipper' 'Ringlet']",11,SiteD
+4,16/07/2021,1,['Meadow_brown' 'Cannot_ID_moth' 'Red_admiral' 'Marbled_white'],4,SiteE
+5,19/07/2021,1,"['No_pollinators_recorded' 'Small_skipper' 'Meadow_brown' 'Cannot_ID_moth'
+ 'Small_white' 'Small_tortoiseshell' 'Large_white']",7,SiteG
+6,19/07/2021,1,"['Cannot_ID_hoverfly' 'Small_skipper' 'Meadow_brown' 'Marbled_white'
+ 'Large_white' 'Gatekeeper' 'Peacock' 'Common_blue'
+ 'Buff_or_white_tailed_bumblebee' 'Common_carder_bee' 'Small_heath'
+ 'Painted_lady' 'Ringlet']",13,SiteF
+7,21/07/2021,1,"['Marbled_white' 'Small_skipper' 'Meadow_brown' 'Gatekeeper' 'Ringlet'
+ 'Large_skipper' 'Cannot_ID_moth']",7,SiteI
+8,21/07/2021,1,"['Small_skipper' 'Marbled_white' 'Meadow_brown' 'Ringlet'
+ 'Green_veined_white' 'Small_heath' 'Large_white' 'Cannot_ID_hoverfly'
+ 'Gatekeeper' 'Six_spot_burnet' 'Cannot_ID_moth' 'Common_carder_bee'
+ 'Peacock' 'Small_tortoiseshell']",14,SiteH
+9,22/07/2021,1,"['Cannot_ID_hoverfly' 'Meadow_brown' 'Gatekeeper'
+ 'No_pollinators_recorded' 'Large_white' 'Buff_tailed_bumblebee'
+ 'Cannot_ID_moth']",7,SiteJ
+10,23/07/2021,1,"['Cannot_ID_moth' 'Meadow_brown' 'Ringlet' 'Small_skipper' 'Large_white'
+ 'Buff_or_white_tailed_bumblebee' 'Cannot_ID_hoverfly'
+ 'Red_tailed_bumblebee' 'Large_skipper' 'Gatekeeper' 'Heath_bumblebee'
+ 'Common_carder_bee' 'Buff_tailed_bumblebee']",13,SiteK
+11,26/07/2021,1,"['Meadow_brown' 'Gatekeeper' 'Large_white' 'Ringlet' 'Cannot_ID_hoverfly'
+ 'Red_tailed_bumblebee' 'Cannot_ID_moth' 'Small_skipper' 'Marbled_white'
+ 'Buff_or_white_tailed_bumblebee' 'Common_carder_bee' 'Large_skipper']",12,SiteL
+12,27/07/2021,1,"['Meadow_brown' 'Ringlet' 'Common_blue' 'Cannot_ID_hoverfly'
+ 'Cannot_ID_moth' 'Red_tailed_bumblebee' 'Buff_or_white_tailed_bumblebee'
+ 'Tree_bumblebee' 'Common_carder_bee' 'Gatekeeper']",10,SiteM
+13,27/07/2021,1,"['Cannot_ID_moth' 'Cannot_ID_hoverfly' 'Red_tailed_bumblebee'
+ 'Meadow_brown' 'Gatekeeper' 'Small_skipper' 'Small_heath']",7,SiteN
+14,17/08/2021,1,['No_pollinators_recorded' 'Gatekeeper'],2,SiteA
+15,17/08/2021,1,"['Cannot_ID_hoverfly' 'Common_carder_bee' 'Meadow_brown' 'Common_blue'
+ 'Cannot_ID_moth']",5,SiteB
+16,18/08/2021,1,"['Meadow_brown' 'Red_tailed_bumblebee' 'No_pollinators_recorded'
+ 'Cannot_ID_moth' 'Common_carder_bee' 'Cannot_ID_hoverfly'
+ 'Buff_or_white_tailed_bumblebee' 'Honeybee' 'Buff_tailed_bumblebee'
+ 'Gatekeeper' 'Speckled_wood']",11,SiteD
+17,18/08/2021,1,"['No_pollinators_recorded' 'Small_white' 'Cannot_ID_moth'
+ 'Cannot_ID_hoverfly' 'Gatekeeper']",5,SiteE
+18,19/08/2021,1,"['Cannot_ID_moth' 'Small_tortoiseshell' 'No_pollinators_recorded'
+ 'Meadow_brown' 'Honeybee' 'Common_blue' 'Common_carder_bee']",7,SiteC
+19,20/08/2021,1,['No_pollinators_recorded'],1,SiteG
+20,23/08/2021,1,"['No_pollinators_recorded' 'Speckled_wood' 'Meadow_brown' 'Brimstone'
+ 'Cannot_ID_moth']",5,SiteO
+21,23/08/2021,1,['No_pollinators_recorded' 'Cannot_ID_hoverfly' 'Cannot_ID_moth'],3,SiteJ
+22,24/08/2021,1,"['Cannot_ID_moth' 'Small_tortoiseshell' 'Cannot_ID_hoverfly'
+ 'Speckled_wood' 'Meadow_brown' 'No_pollinators_recorded']",6,SiteI
+23,24/08/2021,1,"['Cannot_ID_moth' 'Cannot_ID_hoverfly' 'Common_blue' 'Meadow_brown'
+ 'Small_tortoiseshell' 'Small_white' 'Buff_or_white_tailed_bumblebee'
+ 'Speckled_wood' 'Brimstone' 'Small_heath']",10,SiteH
+24,25/08/2021,1,"['Cannot_ID_moth' 'Cannot_ID_hoverfly' 'No_pollinators_recorded'
+ 'Honeybee' 'Red_tailed_bumblebee' 'Common_carder_bee']",6,SiteL
+25,26/08/2021,1,"['No_pollinators_recorded' 'Cannot_ID_hoverfly' 'Common_carder_bee'
+ 'Buff_or_white_tailed_bumblebee' 'Small_tortoiseshell']",5,SiteK
+26,27/08/2021,1,"['No_pollinators_recorded' 'Common_carder_bee' 'Speckled_wood'
+ 'Cannot_ID_hoverfly']",4,SiteM
+27,27/08/2021,1,['Cannot_ID_hoverfly' 'No_pollinators_recorded' 'Common_carder_bee'],3,SiteN
+28,16/09/2021,1,['No_pollinators_recorded' 'Red_admiral'],2,SiteA
+29,16/09/2021,1,['Common_carder_bee' 'No_pollinators_recorded' 'Cannot_ID_hoverfly'],3,SiteC
+30,17/09/2021,1,"['No_pollinators_recorded' 'Cannot_ID_hoverfly'
+ 'Buff_or_white_tailed_bumblebee' 'Common_carder_bee']",4,SiteP
+31,17/09/2021,1,"['No_pollinators_recorded' 'Red_admiral' 'Cannot_ID_hoverfly'
+ 'Small_white']",4,SiteB
+32,20/09/2021,1,['No_pollinators_recorded' 'Red_admiral' 'Cannot_ID_hoverfly'],3,SiteD
+33,20/09/2021,1,['Cannot_ID_hoverfly' 'No_pollinators_recorded' 'Comma' 'Small_white'],4,SiteE
+34,21/09/2021,1,['No_pollinators_recorded' 'Small_white'],2,SiteG
+35,22/09/2021,1,['No_pollinators_recorded' 'Large_white'],2,SiteO
+36,22/09/2021,1,['No_pollinators_recorded' 'Cannot_ID_hoverfly'],2,SiteJ
+37,23/09/2021,1,['No_pollinators_recorded' 'Cannot_ID_hoverfly' 'Speckled_wood'],3,SiteI
+38,23/09/2021,1,"['Common_carder_bee' 'Tree_bumblebee' 'No_pollinators_recorded'
+ 'Speckled_wood' 'Small_heath' 'Red_admiral']",6,SiteH
+39,24/09/2021,1,['Cannot_ID_hoverfly' 'No_pollinators_recorded' 'Common_carder_bee'],3,SiteL
+40,27/09/2021,1,['Cannot_ID_moth' 'No_pollinators_recorded'],2,SiteK
+41,28/09/2021,1,['No_pollinators_recorded' 'Honeybee'],2,SiteM
+42,28/09/2021,1,['Cannot_ID_hoverfly' 'No_pollinators_recorded'],2,SiteN

@@ -1,0 +1,65 @@
+Index,Date,Number_Sites,Species,Number_Species,AnonymSite
+0,14/07/2021,1,"['Creeping_buttercup' 'Common_centaury' 'Non_flowering_spp'
+ 'Scarlet_pimpernel' 'Chick_weed']",5,SiteA
+1,15/07/2021,1,['Non_flowering_spp' 'White_clover' 'Red_clover'],3,SiteC
+2,15/07/2021,1,"['Red_clover' 'Non_flowering_spp' 'White_clover' 'Hawkbit_spp'
+ 'Creeping_buttercup']",5,SiteB
+3,16/07/2021,1,"['White_clover' 'Common_knapweed' 'Non_flowering_spp' 'Yarrow'
+ 'Musk_mallow' 'Self_heal' 'Field_scabious' 'Creeping_buttercup'
+ 'Common_ragwort' 'Hawkbit_spp']",10,SiteD
+4,16/07/2021,1,['Non_flowering_spp'],1,SiteE
+5,19/07/2021,1,['Non_flowering_spp'],1,SiteG
+6,19/07/2021,1,"['Red_clover' 'Ladys_bedstraw' 'Birds_foot_trefoil' 'Non_flowering_spp'
+ 'White_clover' 'Yellow_rattle' 'Hawkbit_spp' 'Dandelion' 'Common_ragwort'
+ 'Thistle_spp' 'Self_heal' 'Musk_mallow']",12,SiteF
+7,21/07/2021,1,['Non_flowering_spp' 'Meadow_buttercup' 'Red_clover'],3,SiteI
+8,21/07/2021,1,"['Cow_parsley' 'White_clover' 'Non_flowering_spp' 'Tormentil' 'Bramble'
+ 'Common_ragwort' 'Rosebay_willowherb' 'Field_scabious']",8,SiteH
+9,22/07/2021,1,['Non_flowering_spp'],1,SiteJ
+10,23/07/2021,1,['Non_flowering_spp' 'Musk_mallow'],2,SiteK
+11,26/07/2021,1,"['Non_flowering_spp' 'Hawkbit_spp' 'Cut_leaved_cranes_bill' 'White_clover'
+ 'Yarrow' 'Common_knapweed' 'Ox_eye_daisy' 'Birds_foot_trefoil'
+ 'Field_bindweed']",9,SiteL
+12,27/07/2021,1,['Non_flowering_spp' 'Self_heal' 'Creeping_buttercup' 'Birds_foot_trefoil'],4,SiteM
+13,27/07/2021,1,['Non_flowering_spp' 'White_clover' 'Hawkbit_spp' 'Black_medick'],4,SiteN
+14,17/08/2021,1,"['Common_daisy' 'Non_flowering_spp' 'Thyme_leaved_speedwell'
+ 'Birds_foot_trefoil' 'Scarlet_pimpernel' 'Dandelion']",6,SiteA
+15,17/08/2021,1,"['Dandelion' 'Red_clover' 'Non_flowering_spp' 'Birds_foot_trefoil'
+ 'White_clover' 'Creeping_buttercup' 'Hawkbit_spp']",7,SiteB
+16,18/08/2021,1,"['Non_flowering_spp' 'White_clover' 'Common_ragwort' 'Red_bartsia'
+ 'Rosebay_willowherb' 'Field_scabious' 'Hawkbit_spp' 'Cow_parsley'
+ 'Self_heal']",9,SiteD
+17,18/08/2021,1,['Common_daisy' 'Non_flowering_spp'],2,SiteE
+18,19/08/2021,1,['Non_flowering_spp' 'Red_clover' 'Black_medick' 'White_clover'],4,SiteC
+19,20/08/2021,1,['Dandelion' 'Non_flowering_spp' 'Chick_weed' 'White_clover'],4,SiteG
+20,23/08/2021,1,['Non_flowering_spp'],1,SiteO
+21,23/08/2021,1,['Non_flowering_spp'],1,SiteJ
+22,24/08/2021,1,['Non_flowering_spp' 'Common_knapweed' 'Cut_leaved_cranes_bill'],3,SiteI
+23,24/08/2021,1,"['Teasel' 'Non_flowering_spp' 'Black_medick' 'Cut_leaved_cranes_bill'
+ 'Agrimony' 'Birds_foot_trefoil' 'Hawkbit_spp' 'Red_bartsia'
+ 'Common_toadflax' 'Common_ragwort' 'Self_heal']",11,SiteH
+24,25/08/2021,1,"['Non_flowering_spp' 'Cut_leaved_cranes_bill' 'Hawkbit_spp' 'White_clover'
+ 'Birds_foot_trefoil' 'Common_knapweed' 'Ladys_bedstraw']",7,SiteL
+25,26/08/2021,1,['Non_flowering_spp' 'Self_heal' 'Rosebay_willowherb'],3,SiteK
+26,27/08/2021,1,"['Birds_foot_trefoil' 'Non_flowering_spp' 'Common_knapweed' 'Self_heal'
+ 'White_clover']",5,SiteM
+27,27/08/2021,1,['Non_flowering_spp' 'Common_ragwort' 'Hawkbit_spp' 'Hop_trefoil'],4,SiteN
+28,16/09/2021,1,"['Thyme_leaved_speedwell' 'Non_flowering_spp' 'Chick_weed'
+ 'Creeping_buttercup']",4,SiteA
+29,16/09/2021,1,['Non_flowering_spp' 'Red_clover' 'White_clover'],3,SiteC
+30,17/09/2021,1,"['Non_flowering_spp' 'Hawkbit_spp' 'Ling_heather' 'Bell_heather'
+ 'Common_ragwort' 'Dandelion']",6,SiteP
+31,17/09/2021,1,['Non_flowering_spp'],1,SiteB
+32,20/09/2021,1,['Non_flowering_spp'],1,SiteD
+33,20/09/2021,1,['Ox_eye_daisy' 'Non_flowering_spp' 'Thistle_spp'],3,SiteE
+34,21/09/2021,1,['Ox_eye_daisy' 'Non_flowering_spp' 'Creeping_buttercup'],3,SiteG
+35,22/09/2021,1,['Non_flowering_spp'],1,SiteO
+36,22/09/2021,1,['Non_flowering_spp'],1,SiteJ
+37,23/09/2021,1,['Non_flowering_spp'],1,SiteI
+38,23/09/2021,1,"['Non_flowering_spp' 'Agrimony' 'Common_ragwort' 'Common_toadflax'
+ 'Hawkbit_spp' 'Cow_parsley']",6,SiteH
+39,24/09/2021,1,"['Non_flowering_spp' 'Cut_leaved_cranes_bill' 'Hawkbit_spp' 'Red_clover'
+ 'White_clover' 'Common_knapweed']",6,SiteL
+40,27/09/2021,1,['Non_flowering_spp'],1,SiteK
+41,28/09/2021,1,['Non_flowering_spp'],1,SiteM
+42,28/09/2021,1,['Non_flowering_spp' 'Dandelion'],2,SiteN

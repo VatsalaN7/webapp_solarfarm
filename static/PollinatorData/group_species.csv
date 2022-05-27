@@ -1,0 +1,13 @@
+Group,Species
+Bumblebee,"['Garden_bumblebee' 'Common_carder_bee' 'Red_tailed_bumblebee'
+ 'Buff_tailed_bumblebee' 'Buff_or_white_tailed_bumblebee'
+ 'Heath_bumblebee' 'Tree_bumblebee']"
+Butterfly,"['Marbled_white' 'Meadow_brown' 'Large_white' 'Gatekeeper' 'Large_skipper'
+ 'Ringlet' 'Peacock' 'Buff_or_white_tailed_bumblebee' 'Red_admiral'
+ 'Small_skipper' 'Common_blue' 'Small_heath' 'Painted_lady' 'Small_white'
+ 'Small_tortoiseshell' 'Green_veined_white' 'Speckled_wood' 'Brimstone'
+ 'Comma']"
+Honeybee,['Honeybee']
+Hoverfly,['Cannot_ID_hoverfly']
+Moth,['Cannot_ID_moth' 'Six_spot_burnet']
+None,['No_pollinators_recorded']

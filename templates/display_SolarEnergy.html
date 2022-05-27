@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Display Biodiversity Data</title>
+   
+   <!--<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" /> -->
+   <link rel="shortcut icon" href="{{url_for('static', filename='assets/images/solar_logo1.jpg')}}" type="image/png">  <!--favicon.jpg-->
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/bootstrap.min.css')}}">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/LineIcons.css')}}">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/magnific-popup.css')}}">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/slick.css')}}">
+
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/animate.css')}}">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/default.css')}}">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/style.css')}}">
+
+    <style>
+    body {
+      overflow: scroll; /* Show scrollbars */
+     }
+    </style>
+
+</head>
+<body>
+  <section class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <img src="{{url_for('static', filename='assets/images/solar_logo1.png')}}" alt="Logo}}"> <!--to change to Solar Farms from logo.png--> 
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarEight">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="{{url_for('homepage')}}">HOME</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="{{url_for('view_BiodiversityData')}}">View Biodiversity Data</a>
+                                    </li>
+                                </ul> 
+                            </div>
+
+                            <!--<div class="navbar-btn d-none mt-15 d-lg-inline-block">
+                                <a class="menu-bar" href="#side-menu-right"><i class="lni-menu"></i></a>
+                            </div>-->
+  </section>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <div><h2 style="color:blue;"><center>Exploring the Solar Energy data<sub> related to Solar Farms</sub></center></h1></div>
+
+
+     <table border=1 style="border-spacing:50px; width:100%">
+     <tr><td colspan="2"><a href="{{url_for('solarenergy')}}">Reposition Page</td></tr>
+      <tr>
+        <td width="50%">
+            <div class="centered">
+            <table style="border-spacing:25px;">
+            	<tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            		<th>Solar Energy Data</th>
+            		<th><table>
+        	    			<tr><td style="font-size:18px;"><a href="{{url_for('displaySolarEnergy', data='met_ghg_veg')}}">Integrated met, GHG and veg</a></td></tr>
+                    <tr><td style="font-size:18px;"><a href="{{url_for('displaySolarEnergy', data='soil_and_veg')}}">Soil and veg</a></td></tr>
+                    <tr><td align="left" style="padding-left: 5px;padding-bottom:3px; font-size:18px; color:#5F8525">2013 Data<br/>
+                            <div style="text-align: center;">
+                                  <ul style="text-align:left; display: inline-block;">
+                                     <li><a href="{{url_for('displaySolarEnergy', data='2013_fulloutput')}}">SiteY 2013 full output</a></li>
+                                      <li><a href="{{url_for('displaySolarEnergy', data='2013_export')}}">SiteY 2013 export</a></li>
+                                      <li><a href="{{url_for('displaySolarEnergy', data='2013_temp')}}">SiteY 2013 temp</a></li>
+                                  </ul> 
+                            </div>            
+                    </td></tr>
+                     <tr><td align="left" style="padding-left: 5px;padding-bottom:3px; font-size:18px; color:#5F8525">2014 Data<br/>
+                            <div style="text-align: center;">
+                                  <ul style="text-align:left; display: inline-block;">
+                                      <li><a href="{{url_for('displaySolarEnergy', data='2014_export')}}">SiteY 2014 export</a></li>
+                                      <li><a href="{{url_for('displaySolarEnergy', data='2014_temp')}}">SiteY 2014 temp</a></li>
+                                  </ul> 
+                            </div>            
+                    </td></tr>
+                     <tr><td align="left" style="padding-left: 5px;padding-bottom:3px; font-size:18px; color:#5F8525">2015 Data<br/>
+                            <div style="text-align: center;">
+                                  <ul style="text-align:left; display: inline-block;">
+                                      <li><a href="{{url_for('displaySolarEnergy', data='2015_export')}}">SiteY 2015 export</a></li>
+                                      <li><a href="{{url_for('displaySolarEnergy', data='2015_temp')}}">SiteY 2015 temp</a></li>
+                                  </ul> 
+                            </div>            
+                    </td></tr>
+                     <tr><td align="left" style="padding-left: 5px;padding-bottom:3px; font-size:18px; color:#5F8525">2016 Data<br/>
+                            <div style="text-align: center;">
+                                  <ul style="text-align:left; display: inline-block;">
+                                      <li><a href="{{url_for('displaySolarEnergy', data='2016_export')}}">SiteY 2016 export</a></li>
+                                      <li><a href="{{url_for('displaySolarEnergy', data='2016_temp')}}">SiteY 2016 temp</a></li>
+                                  </ul> 
+                            </div>            
+                    </td></tr>
+            		    </table>
+            		</th>
+            	</tr>
+            </table>
+            </div>
+        </td>
+        <td width="50%">
+            
+           <table>
+            <tr><td>
+                   {% if message %}
+                    <h3 style="background-color:#C9CDEC;color:#5844BC; font-size=15px;">Viewing the data about {{message}}</h3>
+                  {% endif %}
+            </td></tr>
+
+            <tr><td valign="top">
+                     <h1>
+                {% if spreadsheet %}
+                  {% for sheet in spreadsheet.sheetnames %}
+                       {% if colorcode == '#EDFAF3' %}
+                       {% set colorcode = '#DDE5F6' %} 
+                       {% elif colorcode == '#DDE5F6' %}
+                       {% set colorcode = '#EDFAF3 ' %}
+                       {% endif %}    
+                     <table id="demo">
+                      <tr><td style="height="3">&nbsp;</td></tr>
+                      <tr><td style="background-color: #DAECBD; font-size: 16px;font-weight:bold;">Sheet Name={{sheet}}</td></tr>
+                      {% for row in range(1, 10) %}
+                       {% if colorcode == '#EDFAF3' %}
+                       {% set colorcode = '#DDE5F6' %} 
+                       {% elif colorcode == '#DDE5F6' %}
+                       {% set colorcode = '#EDFAF3' %}
+                       {% endif %}    
+                        <tr style="background-color: {{colorcode}};">
+                          {% for col in range(1, spreadsheet[sheet].max_column + 1) %}
+                          {% if row == 1 %}
+                            <th style="font-size: 14px; background-color: #A3ECFB;">{{ spreadsheet[sheet].cell(row, col).value }}</th>
+                          {% else %}
+                            <td style="font-size: 12px;">{{ spreadsheet[sheet].cell(row, col).value }}</td>
+                          {% endif %}
+                          {% endfor %}
+
+                        </tr>
+                      {% endfor %}
+                    </table>
+                  {% endfor %}
+              {% endif %}
+               </h1>
+           </td></tr>
+            {% if message == "met_ghg_veg" %}
+                <tr rowspan="2"><td><a href="{{url_for('static', filename='SolarEnergyData/integrated_met_GHG_and_veg.xlsx')}}">Download the {{message}} file</a></td></tr>
+            {% elif message == "soil_and_veg" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SolarEnergyData/soil_and_veg_summary.xlsx')}}">Download the {{message}} file</a></td></tr>    
+            {% elif message == "2013_fulloutput" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SolarEnergyData/2013_SiteY_full_output_including_nighttime.xlsx')}}">Download the {{message}} file</a></td></tr>    
+            {% elif message == "2013_export" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SolarEnergyData/SiteY_2013_export.xlsx')}}">Download the {{message}} file</a></td></tr>
+            {% elif message == "2013_temp" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SolarEnergyData/SiteY_2013_temp.xlsx')}}">Download the {{message}} file</a></td></tr>
+            {% elif message == "2014_export" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SolarEnergyData/SiteY_2014_export.xlsx')}}">Download the {{message}} file</a></td></tr>
+            {% elif message == "2014_temp" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SolarEnergyData/SiteY_2014_temp.xlsx')}}">Download the {{message}} file</a></td></tr>
+            {% elif message == "2015_export" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SolarEnergyData/SiteY_2015_export.xlsx')}}">Download the {{message}} file</a></td></tr>
+            {% elif message == "2015_temp" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SolarEnergyData/SiteY_2015_temp.xlsx')}}">Download the {{message}} file</a></td></tr>
+            {% elif message == "2016_export" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SolarEnergyData/SiteY_2016_export.xlsx')}}">Download the {{message}} file</a></td></tr>
+            {% elif message == "2016_temp" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SolarEnergyData/SiteY_2016_temp.xlsx')}}">Download the {{message}} file</a></td></tr>
+            {% endif %}
+           </table>
+          
+        </td>
+      </tr>
+      <tr><td colspan="2"><a href="{{url_for('homepage')}}">Home Page</td></tr>
+    </table>
+
+    	
+</body>
+</html>
+

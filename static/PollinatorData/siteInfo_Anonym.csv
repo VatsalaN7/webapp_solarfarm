@@ -1,0 +1,44 @@
+Index,Date,Round,Sheep,Honeybee_hives,General_observations,polarity,subjectivity,AnonymSite
+0,14/07/2021,1,Yes,No,"Grass grazed very short, areas outside of fenced boundary looked a lot more diverse but unknown if this belongs to the solar park",0.1,0.38,SiteA
+1,15/07/2021,1,No,No,Grass uncut and very long everywhere,-0.28,0.66,SiteB
+2,15/07/2021,1,No,Yes,"Grass uncut in some fields and cut in others, very variable across the site",-0.15,0.55,SiteC
+3,16/07/2021,1,No,No,"Grass uncut and long, especially in the margins",-0.18,0.73,SiteD
+4,16/07/2021,1,No,No,"Grass cut and cuttings not removed, border between fields looked unmown but could be public footpath",0,0.07,SiteE
+5,19/07/2021,1,No,No,"Grass cut (but flowers beginning to grow back), areas left uncut near the entrance and front of the site",-0.1,0.3,SiteF
+6,19/07/2021,1,Yes,No,"Grass grazed very short in areas, but patches left slightly longer",-0.06,0.19,SiteG
+7,21/07/2021,1,No,No,"Grass uncut because of skylarks, ecologist on site to advise before cutting, relatively high abundance and diversity of flowering plants",-0.31,0.75,SiteH
+8,21/07/2021,1,No,No,Grass not cut recently,0,0.25,SiteI
+9,22/07/2021,1,No,No,"Grass was in the middle of being cut, in one field there was some trimming in front of the panels but in another the whole row had been cut, special amphibian areas, many frogs on site",0.26,0.37,SiteJ
+10,23/07/2021,1,No,No,"Grass uncut, long between panels and even longer in the margins, many hedgerows running through the site",-0.02,0.57,SiteK
+11,26/07/2021,1,No,No,"Two biodiversity areas on site (front near entrance and back right of first field) that appeared to be seeded and had insect hotels, climbing species planted for screening",0.16,0.32,SiteL
+12,27/07/2021,1,No,No,"Grass not cut recently (engineer says grass is cut twice per year), relatively high abundance of flowering plants between panel rows that were not always captured in quadrats",0.08,0.39,SiteM
+13,27/07/2021,1,No,No,"Grass not cut recently (engineer says grass is cut twice per year), areas at back of site where flowering plants were more abundant",0.28,0.42,SiteN
+14,17/08/2021,2,Yes,No,"Grass grazed very short, areas outside of fenced boundary looked a lot more diverse but unknown if this belongs to the solar park",0.1,0.38,SiteA
+15,17/08/2021,2,No,No,"Grass cut since July visit but had grown back quite long, flowering plants were still present despite cutting",-0.16,0.32,SiteB
+16,18/08/2021,2,No,No,Grass cut in one field but seemed uncut and long in other areas and margins,-0.22,0.52,SiteD
+17,18/08/2021,2,No,No,"Grass cut and cuttings not removed, border between fields looked unmown but could be public footpath - more flowering plants (mostly daisies) than in July",0.33,0.36,SiteE
+18,19/08/2021,2,No,Yes,Grass cut across the site with some patches left long away from the panels (mostly too small for a transect),0.05,0.32,SiteC
+19,20/08/2021,2,Yes,No,"Grass grazed very short (bare ground in some areas) especially in first field, slightly longer in second field and some flowering plants ",0.08,0.26,SiteG
+20,23/08/2021,2,No,No,"Grass was longer than July visit but not long in any areas between the panels, very boggy",0.11,0.35,SiteJ
+21,23/08/2021,2,No,No,"Grass was mown with cuttings left in place, suggestion that sheep could graze parts of the park but they were not on site",0,0,SiteO
+22,24/08/2021,2,No,No,"Grass seemed like it had not been cut recently but there were few flowering plants between rows, areas left longer in some margin patches (knapweed dominated)",-0.07,0.12,SiteI
+23,24/08/2021,2,No,No,Vegetation had been cut since July visit but had partially regrown - strip cut very short in front of panels,-0.05,0.34,SiteH
+24,25/08/2021,2,No,No,"Two biodiversity areas on site (front near entrance and back right of first field) that appeared to be seeded and had insect hotels, climbing species planted for screening",0.16,0.32,SiteL
+25,26/08/2021,2,No,No,"Grass uncut (? - same as July), long between panels and even longer in the margins, many hedgerows running through the site",-0.01,0.46,SiteK
+26,27/08/2021,2,No,No,"Grass not cut recently (engineer says grass is cut twice per year), relatively high abundance of flowering plants between panel rows that were not always captured in quadrats - areas at the back of the site that were wildflower rich",0.13,0.38,SiteM
+27,27/08/2021,2,No,No,"Grass not cut recently (engineer says grass is cut twice per year), areas at back of site where flowering plants were more abundant",0.28,0.42,SiteN
+28,16/09/2021,3,Yes,No,"Grass grazed very short, areas outside of fenced boundary looked a lot more diverse but unknown if this belongs to the solar park",0.1,0.38,SiteA
+29,16/09/2021,3,No,Yes,"Grass quite consistent length across the site, some patches left long but too small for a transect",-0.01,0.26,SiteC
+30,17/09/2021,3,No,Yes,"Not grazed and grass relatively long in places, large area of heather towards back of site which was noticeably more valuable to pollinators",0.17,0.33,SiteP
+31,17/09/2021,3,No,No,"Grass seemed to be very recently cut and some strimming was going on on site, lack of flowering plants and margins appeared to be cut too",0,0.32,SiteB
+32,20/09/2021,3,No,No,"Grass was being cut as we were on site - most rows appeared to be fully mown, whereas others had a strip left in front of the panels. Areas away from panels were left longer.",0.17,0.17,SiteD
+33,20/09/2021,3,No,No,"Grass seemed longer than in July and August, abundant open areas of daisies at the site entrance",0.3,0.72,SiteE
+34,21/09/2021,3,No,No,"No sheep on site this time, although droppings and short grass suggest they had been grazing up until recently",0,0.28,SiteG
+35,22/09/2021,3,No,No,"Vegetation similar to July and August, still very boggy",0.1,0.35,SiteJ
+36,22/09/2021,3,No,No,"Vegetation was longer than August visit, no sheep on site but droppings suggest they could have been recently",0,0.25,SiteO
+37,23/09/2021,3,No,No,"Grass seemed like it had not been cut recently but there were few flowering plants between rows, areas left longer in some margin patches (knapweed dominated)",-0.07,0.12,SiteI
+38,23/09/2021,3,No,No,"Vegetation appeared similar to August, with some flowering plant species still present between the rows - strips had been mown in front of the panels themselves (maybe 1m wide)",-0.03,0.27,SiteH
+39,24/09/2021,3,No,No,"Vegetation similar to previous visits, still some flowering plant species between rows despite it being September - also areas not between rows that were rich, close to substations",0.07,0.44,SiteL
+40,27/09/2021,3,No,No,"Grass not cut recently (engineer says grass is cut twice per year), very few flowering plants anywhere on site (between rows or in margin areas)",-0.13,0.19,SiteK
+41,28/09/2021,3,No,No,"Vegetation across the whole site (including margins and free areas) had been cut since August visit, very few flowering plants across the site",0.11,0.44,SiteM
+42,28/09/2021,3,No,No,"Vegetation across the whole site (including margins and free areas) had been cut since August visit, very few flowering plants across the site",0.11,0.44,SiteN

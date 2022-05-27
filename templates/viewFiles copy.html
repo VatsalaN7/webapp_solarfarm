@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Upload Biodiversity Data</title>
+    <div><h1 style="color:blue;"><center>Exploring the biodiversity data related to Solar Farms</center></h1></div>
+   <!--<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" /> -->
+</head>
+<body>
+     <table border=1 style="border-spacing:50px; width:100%">
+      <tr><td colspan="2"><a href="{{url_for('homepage')}}">Home Page</td></tr>
+      <tr>
+        <td width="50%">
+            <div class="centered">
+            <table style="border-spacing:25px;">
+              <tr><th colspan="2" style="font-size: 16px;">View Files</th></tr>
+              {% for file in files %}
+              <tr><td>
+                <a href="{{url_for('display_uploadedfiles', data=file)}}">
+                   <h3 style="background-color:#C9CDEC;color:#5844BC; font-size=15px;">{{file}}</h3>
+                </a> 
+              <!--<sub><a href="{{url_for('static', filename='/uploads/'+file|string)}}" download style="color: #286753;">Download</a></sub>-->
+            </td></tr>
+           {% endfor %}
+            </table>
+            </div>
+        </td>
+        <td width="50%">
+            
+           <table>
+           <tr><td>
+                   {% if data %}
+                    <h3 style="background-color:#C9CDEC;color:#5844BC; font-size=15px;">Viewing the data about {{data}}</h3>
+                  {% endif %}
+            </td></tr>
+
+            <tr><td>
+                <h1>
+                {% if data %}  
+                {% if ext == 'csv' %}
+                    {% for table in tables %}
+                        <h2>{{titles[loop.index]}}</h2>
+                        {{table| safe}}
+                    {% endfor %}
+                {% endif %}
+                {% elif ext == 'xlsx' %}
+                {% if spreadsheet %}
+                  {% for sheet in spreadsheet.sheetnames %}
+                       {% if colorcode == '#EDFAF3' %}
+                       {% set colorcode = '#DDE5F6' %} 
+                       {% elif colorcode == '#DDE5F6' %}
+                       {% set colorcode = '#EDFAF3 ' %}
+                       {% endif %}    
+                     <table id="demo">
+                      <tr><td style="height="3">&nbsp;</td></tr>
+                      <tr><td style="background-color: #DAECBD; font-size: 16px;font-weight:bold;">Sheet Name={{sheet}}</td></tr>
+                      {% for row in range(1, 10) %}
+                       {% if colorcode == '#EDFAF3' %}
+                       {% set colorcode = '#DDE5F6' %} 
+                       {% elif colorcode == '#DDE5F6' %}
+                       {% set colorcode = '#EDFAF3' %}
+                       {% endif %}    
+                        <tr style="background-color: {{colorcode}};">
+                          {% for col in range(1, spreadsheet[sheet].max_column + 1) %}
+                          {% if row == 1 %}
+                            <th style="font-size: 14px; background-color: #A3ECFB;">{{ spreadsheet[sheet].cell(row, col).value }}</th>
+                          {% else %}
+                            <td style="font-size: 12px;">{{ spreadsheet[sheet].cell(row, col).value }}</td>
+                          {% endif %}
+                          {% endfor %}
+
+                        </tr>
+                      {% endfor %}
+                    </table>
+                  {% endfor %}
+              {% endif %}
+              {% endif %}
+               </h1>
+
+           </td></tr>
+           <tr rowspan="2"><td><a href="{{url_for('static', filename='uploads/'+data|string)}}" download style="color: #286753;">Download {{file}}</a></td></tr>
+           </table>
+        </td>
+      </tr>
+  
+    </table>
+
+    	
+</body>
+</html>
+

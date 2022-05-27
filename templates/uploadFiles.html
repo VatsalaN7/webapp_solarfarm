@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Upload Biodiversity Data</title>
+    <div><h1 style="color:blue;"><center>Exploring the biodiversity data related to Solar Farms</center></h1></div>
+   <!--<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" /> -->
+   <link rel="shortcut icon" href="{{url_for('static', filename='assets/images/solar_logo1.jpg')}}" type="image/png">  <!--favicon.jpg-->
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/bootstrap.min.css')}}">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/LineIcons.css')}}">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/magnific-popup.css')}}">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/slick.css')}}">
+
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/animate.css')}}">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/default.css')}}">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/style.css')}}">
+</head>
+<body>
+ <section class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <img src="{{url_for('static', filename='assets/images/solar_logo1.png')}}" alt="Logo}}"> <!--to change to Solar Farms from logo.png--> 
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarEight">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="{{url_for('homepage')}}">HOME</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="{{url_for('upload_newFiles')}}">Upload Files</a>
+                                    </li>
+                                </ul> 
+                            </div>
+
+                            <!--<div class="navbar-btn d-none mt-15 d-lg-inline-block">
+                                <a class="menu-bar" href="#side-menu-right"><i class="lni-menu"></i></a>
+                            </div>-->
+  </section>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <div><h2 style="color:blue;"><center>Uploading new Files<sub> related to Solar Farms</sub></center></h2></div> 
+
+     <table border=1 style="border-spacing:50px; width:100%">
+      <tr><td colspan="2"><a href="{{url_for('upload_newFiles')}}">New Files</td></tr>
+      <tr>
+        <td width="50%">
+            <div class="centered">
+            <form method=post enctype=multipart/form-data>
+            <table style="border-spacing:25px;">
+              <tr><th colspan="2" style="font-size: 16px;">Upload Files</th></tr>
+              <tr><td><input type=file name=file>
+                  <input type=submit value=Upload>
+              </td></tr>
+            </table>
+            </div>
+        </td>
+        <td width="50%">
+            
+           <table>
+            <tr><td>
+                   {% if message %}
+                    <h3 style="background-color:#C9CDEC;color:#5844BC; font-size=15px;">{{message}}</h3>
+                  {% endif %}
+            </td></tr>
+
+            <tr><td valign="top">
+                <h1>
+                {% if message %}
+                    {% for table in tables %}
+                        <h2>{{titles[loop.index]}}</h2>
+                        {{table| safe}}
+                    {% endfor %}
+                {% endif %}
+               </h1>
+           </td></tr>
+           
+          
+        </td>
+      </tr>
+  
+    </table>
+
+    	
+</body>
+</html>
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Display Soil Data</title>
+   
+   <!--<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" /> -->
+   <!--<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" /> -->
+    <link rel="shortcut icon" href="{{url_for('static', filename='assets/images/solar_logo1.jpg')}}" type="image/png">  <!--favicon.jpg-->
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/bootstrap.min.css')}}">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/LineIcons.css')}}">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/magnific-popup.css')}}">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/slick.css')}}">
+
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/animate.css')}}">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/default.css')}}">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/style.css')}}">
+
+    <style>
+    body {
+      overflow: scroll; /* Show scrollbars */
+     }
+    </style>
+
+</head>
+<body>
+  <section class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <img src="{{url_for('static', filename='assets/images/solar_logo1.png')}}" alt="Logo}}"> <!--to change to Solar Farms from logo.png--> 
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarEight">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="{{url_for('homepage')}}">HOME</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="{{url_for('view_BiodiversityData')}}">View Biodiversity Data</a>
+                                    </li>
+                                </ul> 
+                            </div>
+
+                            <!--<div class="navbar-btn d-none mt-15 d-lg-inline-block">
+                                <a class="menu-bar" href="#side-menu-right"><i class="lni-menu"></i></a>
+                            </div>-->
+      </section>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+      <div><h2 style="color:blue;"><center>Exploring the Soil data<sub> related to Solar Farms</sub></center></h1></div>
+
+      <table border=1 style="border-spacing:50px; width:100%">
+      <tr><td colspan="2"><a href="{{url_for('soil')}}">Reposition Page</td></tr>
+      <tr>
+        <td width="50%">
+            <div class="centered">
+            <table border="1" style="border-spacing:25px;">
+            	<tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            		<th>Soil Data</th>
+            		<th><table>
+        	    			<tr><td><a href="{{url_for('displaySoil', data='soil_data')}}">Soil Data</a></td></tr>
+                    <tr><td><a href="{{url_for('displaySoil', data='soil_siteinfo')}}">Site Info</a></td></tr>
+                    <tr><td><a href="{{url_for('displaySoil', data='soil_siteloc')}}">Site Location</a></td></tr>
+        	    			<tr><td><a href="{{url_for('displaySoil', data='soil_infopersite')}}">Soil Info per site</td></tr>
+            		    </table>
+            		</th>
+            	</tr>
+            	<tr><th colspan="3" style="background-color: grey"></th></tr>
+            	<tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            		<th>Soil Data Visuals</th>
+            		<th><table>
+        	    			<tr><td align="left" style="padding-left: 5px;padding-bottom:3px; font-size:18px; color:#5F8525"><br/>
+                                <!--<a href="{{url_for('static', filename='Visuals/Quadrat/Pollinator_Quadrat_Species_ForAllSites_ExploringOneSite.pdf')}}" download>Quadrats</a>-->
+                                 <!-- Direct to a view function -->
+                                 <!--<a href="{{url_for('testing', test='Quadrats')}}">Quadrats</a>-->
+                                
+                                 <div style="text-align: center;">
+
+                                     <ul style="text-align:left; display: inline-block;">
+                                        <li><a href="{{url_for('static', filename='SoilVisuals/SiteInfo_FrequentWords_Anonym.pdf')}}" target="_blank">Frequent Words in Site Info</a><sub>  <a href="{{url_for('static', filename='SoilVisuals/SiteInfo_FrequentWords_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+
+                                        <li><a href="{{url_for('static', filename='SoilVisuals/SoilParameters_AcrossSites_barplot_Anonym.pdf')}}" target="_blank">Soil Parameters across All Sites -(barplot)</a><sub>  <a href="{{url_for('static', filename='SoilVisuals/SoilParameters_AcrossSites_barplot_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+
+                                        <li><a href="{{url_for('static', filename='SoilVisuals/SoilParameters_AcrossSites_pairplot_Anonym.pdf')}}" target="_blank">Soil Parameters across All Sites -(pairplot)</a><sub>  <a href="{{url_for('static', filename='SoilVisuals/SoilParameters_AcrossSites_pairplot_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+
+                                        <li><a href="{{url_for('static', filename='SoilVisuals/SoilParameters_grass_AcrossSites_pairplot_Anonym.pdf')}}" target="_blank">Soil Parameters across All Sites -(pairplot) 2</a><sub>  <a href="{{url_for('static', filename='SoilVisuals/SoilParameters_grass_AcrossSites_pairplot_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+
+                                        <li><a href="{{url_for('static', filename='SoilVisuals/SoilTemperature_AcrossSites_Anonym.pdf')}}" target="_blank">Soil Temperature across All Sites</a><sub>  <a href="{{url_for('static', filename='SoilVisuals/SoilTemperature_AcrossSites_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+
+                                        <li><a href="{{url_for('static', filename='SoilVisuals/WordCloud_Anonym.pdf')}}" target="_blank">Word Cloud</a><sub>  <a href="{{url_for('static', filename='SoilVisuals/WordCloud_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+                                    </ul>
+                                </div>
+                            </td></tr>
+            		    </table>
+            		</th>
+            	</tr>
+            </table>
+            </div>
+        </td>
+        <td width="50%">
+            
+           <table>
+            <tr><td>
+                   {% if message %}
+                    <h3 style="background-color:#C9CDEC;color:#5844BC; font-size=15px;">Viewing the data about {{message}}</h3>
+                  {% endif %}
+            </td></tr>
+
+            <tr><td valign="top">
+                <h1>
+                {% if message %}
+                    {% for table in tables %}
+                        <h2>{{titles[loop.index]}}</h2>
+                        {{table| safe}}
+                    {% endfor %}
+                {% endif %}
+               </h1>
+           </td></tr>
+            {% if message == "soil_data" %}
+                <tr rowspan="2"><td><a href="{{url_for('static', filename='SoilData/Soil_data_Data_Anonym_cleaneddata.csv')}}">Download the {{message}} file</a></td></tr>
+            {% elif message == "soil_siteinfo" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SoilData/soil_data_sitedata12_Anonym.csv')}}">Download the {{message}} file</a></td></tr>
+            {% elif message == "soil_siteloc" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SoilData/soil_data_sitedata_Anonym.csv')}}">Download the {{message}} file</a></td></tr>
+            {% elif message == "soil_infopersite" %}
+                 <tr rowspan="2"><td><a href="{{url_for('static', filename='SoilData/soil_data_sitedata3456_Anonym.csv')}}">Download the {{message}} file</a></td></tr>
+            {% endif %}
+           </table>
+          
+        </td>
+      </tr>
+  
+    </table>
+    	
+</body>
+</html>
+

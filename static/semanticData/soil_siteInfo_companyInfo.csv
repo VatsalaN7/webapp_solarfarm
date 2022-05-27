@@ -1,0 +1,5 @@
+sitevalue,date,obsValue,polarity,subjectivity,honeyhives,sheep,authorname,company,county,location,postcode
+SiteA,14/07/2021,"Grass grazed very short, areas outside of fenced boundary looked a lot more diverse but unknown if this belongs to the solar park",1.00E-01,3.80E-01,No,Yes,,,,,
+SiteA,17/08/2021,"Grass grazed very short, areas outside of fenced boundary looked a lot more diverse but unknown if this belongs to the solar park",1.00E-01,3.80E-01,No,Yes,,,,,
+SiteA,16/09/2021,"Grass grazed very short, areas outside of fenced boundary looked a lot more diverse but unknown if this belongs to the solar park",1.00E-01,3.80E-01,No,Yes,,,,,
+SiteA,,,,,,,Fabio Carvalho G Da Silva,['CompanyA'],['CountyA'],['LocationA'],['PostcodeA']

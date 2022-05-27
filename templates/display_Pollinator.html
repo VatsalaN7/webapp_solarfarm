@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Display Pollinator Data</title>
+    
+
+   <!--<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" /> -->
+    <link rel="shortcut icon" href="{{url_for('static', filename='assets/images/solar_logo1.jpg')}}" type="image/png">  <!--favicon.jpg-->
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/bootstrap.min.css')}}">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/LineIcons.css')}}">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/magnific-popup.css')}}">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/slick.css')}}">
+
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/animate.css')}}">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/default.css')}}">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/style.css')}}">
+
+    <style>
+    body {
+      overflow: scroll; /* Show scrollbars */
+     }
+    </style>
+
+</head>
+<body>
+
+<section class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <img src="{{url_for('static', filename='assets/images/solar_logo1.png')}}" alt="Logo}}"> <!--to change to Solar Farms from logo.png--> 
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarEight">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="{{url_for('homepage')}}">HOME</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="{{url_for('view_BiodiversityData')}}">View Biodiversity Data</a>
+                                    </li>
+                                </ul> 
+                            </div>
+
+                            <!--<div class="navbar-btn d-none mt-15 d-lg-inline-block">
+                                <a class="menu-bar" href="#side-menu-right"><i class="lni-menu"></i></a>
+                            </div>-->
+</section>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<div>
+                            <div><h3 style="color:blue;"><center>Exploring the Pollinator data<sub> related to Solar Farms</sub></center></h3></div>
+                             <table style="border-spacing:50px; width:100%">
+                              <tr><td colspan="2"><a href="{{url_for('pollinator')}}">Reposition Page</a></td></tr>
+                              <tr>
+                                <td width="50%">
+                                    <div class="centered">
+                                    <table style="border-spacing:25px;" border="1">
+                                      <tr>
+                                        <th><font color="#9E9E43">Pollinator Data</font></th>
+                                        <th><table>
+                                            <tr><td><a href="{{url_for('displayPollinator', data='Quadrats')}}"><font color="#5F8525">Quadrats</font></a></td></tr>
+                                            <tr><td><a href="{{url_for('displayPollinator', data='Quadrats_Species')}}">Species per Quadrats</a></td></tr>
+                                            <tr><td><a href="{{url_for('displayPollinator', data='Species_Site_Quadrat')}}">Species per Site - Quadrat</a></td></tr>
+                                            <tr><td>&nbsp;</td></tr>
+
+                                            <tr><td><a href="{{url_for('displayPollinator', data='Transects')}}"><font color="#5F8525">Transects</font></a></td></tr>
+                                            <tr><td><a href="{{url_for('displayPollinator', data='Transects_Species')}}">Species per Transects</a></td></tr>
+                                            <tr><td><a href="{{url_for('displayPollinator', data='Species_Site_Transect')}}">Species per Site - Transect</a></td></tr>
+                                            <tr><td>&nbsp;</td></tr>
+
+                                            <tr><td><a href="{{url_for('displayPollinator', data='SiteInfo')}}"><font color="#5F8525">Site Info</font></a></td></tr>
+                                            <tr><td><a href="{{url_for('displayPollinator', data='GroupSpecies')}}">Group Species</a></td></tr>
+                                            </table>
+                                        </th>
+                                      </tr>
+                                      <tr><th colspan="2" style="background-color: grey"></th></tr>
+                                      <tr>
+                                        <th><font color="#9E9E43">Pollinator Data Visuals</font></th>
+                                        <th><table>
+                                            <tr><td align="left" style="padding-left: 5px;padding-bottom:3px; font-size:18px; color:#5F8525">Quadrat<br/>
+                                                        <!--<a href="{{url_for('static', filename='Visuals/Quadrat/Pollinator_Quadrat_Species_ForAllSites_ExploringOneSite.pdf')}}" download>Quadrats</a>-->
+                                                         <!-- Direct to a view function -->
+                                                         <!--<a href="{{url_for('testing', test='Quadrats')}}">Quadrats</a>-->
+                                                        
+                                                         <div style="text-align: center;">
+
+                                                             <ul style="text-align:left; display: inline-block;">
+                                                                <li><a href="{{url_for('static', filename='PollinatorVisuals/Quadrat/Pollinator_Quadrat_Species_ForAllSites_ExploringOneSite_Anonym.pdf')}}" target="_blank">Exploring Sites</a><sub>  <a href="{{url_for('static', filename='PollinatorVisuals/Quadrat/Pollinator_Quadrat_Species_ForAllSites_ExploringOneSite_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+
+                                                                <li><a href="{{url_for('static', filename='PollinatorVisuals/Quadrat/Pollinator_Quadrat_SpeciesCount_ForAllSites_Anonym.pdf')}}" target="_blank">Species Count for All Sites</a><sub>  <a href="{{url_for('static', filename='PollinatorVisuals/Quadrat/Pollinator_Quadrat_SpeciesCount_ForAllSites_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+
+                                                                <li><a href="{{url_for('static', filename='PollinatorVisuals/Quadrat/Pollinator_Quadrat_SpeciesInfo_SiteA_Anonym.pdf')}}" target="_blank">Species Info for 1 Site</a><sub>  <a href="{{url_for('static', filename='PollinatorVisuals/Quadrat/Pollinator_Quadrat_SpeciesInfo_SiteA_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+
+                                                                <li><a href="{{url_for('static', filename='PollinatorVisuals/Quadrat/Pollinator_Quadrat_SpeciesInfo_Anonym.pdf')}}" target="_blank">Species Count</a><sub>  <a href="{{url_for('static', filename='PollinatorVisuals/Quadrat/Pollinator_Quadrat_SpeciesInfo_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td></tr>
+                                            <tr><td align="left" style="padding-left: 5px;padding-bottom:3px; font-size:18px; color:#5F8525">Transects<br/>
+                                                        <div style="text-align: center;">
+                                                             <ul style="text-align:left; display: inline-block;">
+                                                                <li><a href="{{url_for('static', filename='PollinatorVisuals/Transect/Pollinator_Transect_Species_ForAllSites_ExploringOneSite_Anonym.pdf')}}" target="_blank">Exploring Sites</a><sub>  <a href="{{url_for('static', filename='PollinatorVisuals/Transect/Pollinator_Transect_Species_ForAllSites_ExploringOneSite_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+
+                                                                <li><a href="{{url_for('static', filename='PollinatorVisuals/Transect/Pollinator_Transect_SpeciesDistribution_Anonym.pdf')}}" target="_blank">Species Distribution</a><sub>  <a href="{{url_for('static', filename='PollinatorVisuals/Transect/Pollinator_Transect_SpeciesDistribution_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td></tr>
+                                            <tr><td align="left" style="padding-left: 5px;padding-bottom:3px; font-size:18px; color:#5F8525">Site Info<br/>
+                                                        <div style="text-align: center;">
+                                                             <ul style="text-align:left; display: inline-block;">
+                                                                <li><a href="{{url_for('static', filename='PollinatorVisuals/SiteInfo/Pollinator_Quadrat_SiteInfo_Anonym.pdf')}}" target="_blank">Site Info</a><sub>  <a href="{{url_for('static', filename='PollinatorVisuals/SiteInfo/Pollinator_Quadrat_SiteInfo_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+
+                                                                <li><a href="{{url_for('static', filename='PollinatorVisuals/SiteInfo/Pollinator_Quadrat_Sheep_HoneybeeHives_Anonym.pdf')}}" target="_blank">Sheep and Honeybee Hives</a><sub>  <a href="{{url_for('static', filename='PollinatorVisuals/SiteInfo/Pollinator_Quadrat_Sheep_HoneybeeHives_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+
+                                                                <li><a href="{{url_for('static', filename='PollinatorVisuals/SiteInfo/Pollinator_Quadrat_SpeciesDistribution_Anonym.pdf')}}" target="_blank">Species Distribution</a><sub>  <a href="{{url_for('static', filename='PollinatorVisuals/SiteInfo/Pollinator_Quadrat_SpeciesDistribution_Anonym.pdf')}}" download style="color: #286753;">Download</a></sub></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td></tr>
+                                            </table>
+                                        </th>
+                                      </tr>
+                                    </table>
+                                    </div>
+                                </td>
+                                <td width="50%">
+                                    
+                                   <table>
+                                    <tr><td>
+                                           {% if message %}
+                                            <h3 style="background-color:#C9CDEC;color:#5844BC; font-size=15px;">Viewing the data about {{message}}</h3>
+                                           {% endif %}
+                                    </td></tr>
+
+                                    <tr><td>
+                                        <h1>
+                                        {% if message %}
+                                            {% for table in tables %}
+                                                <h2>{{titles[loop.index]}}</h2>
+                                                {{table| safe}}
+                                            {% endfor %}
+                                        {% endif %}
+                                       </h1>
+                                   </td></tr>
+                                    {% if message == "Quadrats" %}
+                                        <tr rowspan="2"><td><a href="{{url_for('static', filename='PollinatorData/Field_data_2021_Quadrats_Anonym.csv')}}">Download the {{message}} file</a></td></tr>
+                                    {% elif message == "Quadrats_Species" %}
+                                        <tr rowspan="2"><td><a href="{{url_for('static', filename='PollinatorData/Pollinator_quadrat_perspecies_Anonym.csv')}}">Download the {{message}} file</a></td></tr>
+                                    {% elif message == "Species_Site_Quadrat" %}
+                                        <tr rowspan="2"><td><a href="{{url_for('static', filename='PollinatorData/Pollinator_quadratspecies_Anonym.csv')}}">Download the {{message}} file</a></td></tr>
+                                    {% elif message == "Transects" %}
+                                         <tr rowspan="2"><td><a href="{{url_for('static', filename='PollinatorData/Field_data_2021_Transects_Anonym.csv')}}">Download the {{message}} file</a></td></tr>
+                                    {% elif message == "Transects_Species" %}
+                                         <tr rowspan="2"><td><a href="{{url_for('static', filename='PollinatorData/Pollinator_transect_perspecies_Anonym.csv')}}">Download the {{message}} file</a></td></tr>
+                                    {% elif message == "Species_Site_Transect" %}
+                                         <tr rowspan="2"><td><a href="{{url_for('static', filename='PollinatorData/Pollinator_transectspecies_Anonym.csv')}}">Download the {{message}} file</a></td></tr>
+                                    {% elif message == "SiteInfo" %}
+                                         <tr rowspan="2"><td><a href="{{url_for('static', filename='PollinatorData/siteInfo_Anonym.csv')}}">Download the {{message}} file</a></td></tr>
+                                    {% elif message == "GroupSpecies" %}
+                                         <tr rowspan="2"><td><a href="{{url_for('static', filename='PollinatorData/group_species.csv')}}">Download the {{message}} file</a></td></tr>
+                                    {% endif %}
+                                   </table>
+                                  
+                                </td>
+                              </tr>
+                              <tr><td id="test" colspan="2"><a href="{{url_for('homepage')}}">Home Page</td></tr>
+                            </table>
+                          </div>
+
+
+</div>                      
+</body>
+</html>
+
