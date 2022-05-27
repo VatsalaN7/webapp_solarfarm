@@ -249,7 +249,7 @@ def displayReport_SolarEnergy(data):
 
 	if data == 'fulloutput':
 		path     ='static/SolarEnergyData/CreateReport_DataPrep_SiteY_fulloutput.pdf.zip'
-		filename = 'CreateReport_DataPrep_SiteY_fulloutput.pdf'
+		filename = 'CreateReport_DataPrep_SiteY_fulloutput.pdf.zip'
 	elif data == 'ghg':
 		path     ='static/SolarEnergyData/CreateReport_DataPrep_SiteY_ghg.pdf'
 		filename = 'CreateReport_DataPrep_SiteY_ghg.pdf'
