@@ -269,9 +269,9 @@ def displayReport_SolarEnergy(data):
 @app.route("/displayReport_SolarParkStudy/", methods=["POST", "GET"])
 def displayReport_SolarParkStudy():
 	""" View function for displaying one aspect of the data """
-	path='static/SolarParkStudyData/CreateReport_DataPrep_SolarPark_SiteA.pdf'
+	path='static/SolarParkStudyData/CreateReport_DataPrep_SolarPark_SiteA.pdf.zip'
 	try:
-		return send_file(path, attachment_filename='CreateReport_DataPrep_SolarPark_SiteA.pdf')
+		return send_file(path, attachment_filename='CreateReport_DataPrep_SolarPark_SiteA.pdf.zip')
 	except FileNotFoundError:
 		abort(404)	
 
