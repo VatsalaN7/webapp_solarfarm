@@ -248,7 +248,7 @@ def displayReport_SolarEnergy(data):
 	""" View function for displaying one aspect of the data """
 
 	if data == 'fulloutput':
-		path     ='static/SolarEnergyData/CreateReport_DataPrep_SiteY_fulloutput.pdf'
+		path     ='static/SolarEnergyData/CreateReport_DataPrep_SiteY_fulloutput.pdf.zip'
 		filename = 'CreateReport_DataPrep_SiteY_fulloutput.pdf'
 	elif data == 'ghg':
 		path     ='static/SolarEnergyData/CreateReport_DataPrep_SiteY_ghg.pdf'
