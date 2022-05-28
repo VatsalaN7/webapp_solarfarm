@@ -1,0 +1,14 @@
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+__pycache__/
+*.py[cod]
+*$py.class
